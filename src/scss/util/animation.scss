@@ -1,0 +1,137 @@
+@-webkit-keyframes aroundFlutter {
+    0% {
+        -webkit-transform: translateX(0px);
+    }
+    50% {
+        -webkit-transform: translateX(10px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes leftEnter {
+    0% {
+        -webkit-transform: translateX(-300%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes rightEnter {
+    0% {
+        -webkit-transform: translateX(300%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes upDownFlutter {
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes leftOut {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(-300%);
+    }
+}
+
+@-webkit-keyframes upOut {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    100% {
+        -webkit-transform: translateY(-300%);
+    }
+}
+
+@-webkit-keyframes rightOut {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(300%);
+    }
+}
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacity-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes bottomEnter {
+    0% {
+        -webkit-transform: translateY(300%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes topEnter {
+    0% {
+        -webkit-transform: translateY(-300%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes bounceInDown {
+    0% {
+        -webkit-transform: translateY(-1800px);
+    }
+    60% {
+        -webkit-transform: translateY(20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loading {
+	from {
+		-webkit-transform: rotate(0deg) translateZ(0);
+	}
+	to {
+		-webkit-transform: rotate(360deg) translateZ(0);
+	}
+}

@@ -1,0 +1,37 @@
+<header class="global-header">
+	<a href="javascript:history.go(-1)" class="back"><i class="icon icon-back"></i></a>
+	<a href="javascript:void(0);" class="exit"><i class="icon icon-exit"></i></a>
+	<h1>angular-iscroll</h1>
+</header>
+
+<!-- container 都属于页面级的内容 -->
+<main data-role="page" ng-controller="DemoController">
+	<section class="container history">
+		<div class="history-filter">
+			<a class="btn-filter">Filter<i></i></a>
+			<h5>History</h5>
+		</div>
+
+		<div class="history-top" id="historyTop">
+			<div id="scroller">
+				<ul class="ui-cells ui-border-tb" id="thelist">
+					<li class="ui-cell ui-border-b" ng-repeat="key in data">
+						<div class="ui-cell-hd">
+							<p class="time fz16p">{{key.date}}</p>
+							<p class="time fz14p">{{key.time}}</p>
+						</div>
+						<div class="ui-cell-bd">
+							<p class="money">{{key.money}}</p>
+							<p class="gray">{{key.desciption}}</p>
+						</div>
+						<div class="ui-cell-ft">
+							<p class="state">{{key.state}}</p>
+							<p class="gray">{{key.posName}}</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</section>
+</main>

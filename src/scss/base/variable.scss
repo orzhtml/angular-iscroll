@@ -1,0 +1,139 @@
+/**
+ * Created by carson on 2016/11/3.
+ */
+
+/*
+    saturate($color, 10%);      // 饱和度增加 10%
+    desaturate($color, 10%);    // 饱和度降低 10%
+    lighten($color, 10%);       // 亮度增加 10%
+    darken($color, 10%);        // 亮度降低 10%
+*/
+
+// 颜色
+$color-black: #000;
+$color-white: #fff;
+
+// 灰度
+$color-gray-darker:             #252525;
+$color-gray-dark:               lighten($color-black, 33.5%);   // #555
+$color-gray:                    darken($color-white, 40%);      // #999
+$color-gray-light:              darken($color-white, 33%);      // #aaa
+$color-gray-lighter:            darken($color-white, 13.5%);    // #ddd
+
+// 品牌色
+$color-primary:                 #28A0F2;                // 蓝
+$color-primary-orange:          #ff5150;                // 红
+$color-primary-black:           $color-gray-darker;     // 黑
+$color-success:                 #449d44;                // 成功
+$color-danger:                  #d00;                   // 报错
+
+// 字体颜色
+$global-font-color:             $color-gray-darker;     // 默认色
+$global-link-color:             $color-primary;         // 链接色
+
+$global-title-color:            $color-primary;         // 标题色
+$global-text-color:             $color-gray-darker;     // 文本色
+
+$global-minor-color:            $color-gray-light;      // 次要的 #aaa
+
+// 文章
+$global-describe-title-color:   $color-black;           // 文章标题色
+$global-describe-color:         $color-gray-dark;       // 文章色
+
+// 页面背景颜色
+$page-default-background-color: #f8f8f8;
+
+$highlight-color:               #eee;                   // rgba(0,0,0,.07);
+$placeholder:                   $color-gray-light;
+
+// 字体
+// # 非衬线字体 sans-serif
+// PingHei 苹方黑
+// STHeiTi 华文黑体
+// Simhei 黑体
+// # 衬线字休 serif
+// mac 上默认使用宋体
+$font-sans-serif:               "PingFang SC", "Helvetica Neus", Helvetica, STHeiTi, Simhei, Arial, sans-serif;
+$font-serif:                    Georgia, "Times New Roman", Times, serif;
+$font-base:                     $font-sans-serif;
+// 20 16 14 12 10
+// 基准字体
+$font-size-base:                16px;
+$font-size-large:               ceil(( $font-size-base * 1.375 ));          // ~20px
+$font-size-sm:                  ceil(( $font-size-base * .75 ));            // ~12px
+$font-size-xm:                  ceil(( $font-size-base * .625 ));           // ~10px
+
+$font-size-h1:                  ceil(( $font-size-base * 1.625 ));          // ~26px
+$font-size-h2:                  ceil(( $font-size-base * 1.375 ));          // ~22px
+$font-size-h3:                  ceil(( $font-size-base * 1.125 ));          // ~18px
+$font-size-h4:                  ceil(( $font-size-base * 1.0625 ));         // ~17px
+$font-size-h5:                  $font-size-base;                            // 16px
+$font-size-h6:                  ceil(( $font-size-base * .875 ));           // ~14px
+
+// 基准行高
+$global-line-height:            20 / 14;                            // ~1.42857143
+$icon-line-height:              44px;
+
+// 边框
+$border-color:                  #ddd;
+
+$border-radius-base:            4px;
+$border-radius-lg:              8px;
+
+// Z-Indexes
+$z-index-border:                10;
+$z-index-swiper:                50;
+$z-index-dialog:                1000;
+
+// mask
+$mask-background-mid:           rgba(0, 0, 0, .5);
+$mask-background-lit:           rgba(0, 0, 0, .1);
+
+// 默认按钮
+$btn-background-color:              $color-white;
+$btn-background-image:              -webkit-gradient(linear,left top, left bottom, color-stop(.5, #fff), to(#fafafa));
+$btn-border-color:                  #cacccd;
+$btn-color:                         $color-primary;
+
+$btn-border-radius:                 4px;
+
+$btn-active-color:                  rgba(68,172,243,.7);
+$btn-active-text:                   $global-font-color;
+
+$btn-disabled-color:                #fff;
+$btn-disabled-background-color:     darken($color-white, 20%);  // #ccc
+
+$btn-height:                        30px;
+$btn-padding:                       0 11px;
+$btn-min-width:                     55px;
+$btn-size:                          14px;
+
+$btn-s-width:                       55px;
+$btn-s-height:                      25px;
+$btn-s-size:                        12px;
+
+$btn-lg-height:                     40px;
+$btn-lg-size:                       16px;
+$btn-lg-border-radius:              5px;
+
+$btn-primary-background-color:      #18b4ed;
+$btn-primary-background-image:      -webkit-gradient(linear,left top, left bottom, color-stop(.5, #1fbaf3), to(#18b4ed));
+$btn-primary-text:                  rgb(255,255,255);
+$btn-primary-color:                 $color-white;
+$btn-primary-border-color:          #0baae4;
+$btn-primary-active-bg:             #1ca7da;
+$btn-primary-active-text:           rgba(255,255,255,.5);
+
+// iconFont
+$icon-font-name:                    "iconfont";
+$icon-font-svg-id:                  "font_ye9txin7oqci8uxr";
+
+$icon-ren:                          '\e645';
+$icon-email:                        '\e69f';
+$icon-arrows-left:                  '\e615';
+$icon-exit:                         '\e64d';
+$icon-pos:                          '\e613';
+$icon-pos-management:               '\e617';
+$icon-payment-history:              '\e618';
+$icon-pwd:                          '\e6ec';
+$icon-eye:                          '\e61c';

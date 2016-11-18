@@ -1,0 +1,199 @@
+/**
+ * Created by carson on 2016/11/4.
+ */
+@import "../base/fn";
+
+.ui-cells {
+    line-height: $global-line-height;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ui-cell {
+    padding: 13px 15px;
+    position: relative;
+    display: flex;
+}
+
+.ui-cell-hd {
+    padding-right: 10px;
+}
+
+.ui-cell-bd {
+    flex: 1;
+}
+
+.ui-cell-ft {
+    .null {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        vertical-align: middle;
+        width: 24px;
+    }
+}
+
+.ui-cells-form {
+    .ui-cell-ft {
+        font-size: 0;
+    }
+}
+
+.ui-cell-access {
+    .ui-cell-ft {
+        padding-right: 20px;
+        position: relative;
+
+        &:after {
+            border-width: 2px 2px 0 0;
+            border-color: #C8C8CD;
+            border-style: solid;
+            content: " ";
+            display: inline-block;
+            height: 16px;
+            margin-top: -8px;
+            position: absolute;
+            right: 2px;
+            top: 50%;
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            width: 16px;
+        }
+    }
+}
+
+.ui-cell-switch {
+    padding-top: (44px - 32px) / 2;
+    padding-bottom: (44px - 32px) / 2;
+}
+
+.ui-switch {
+    appearance: none;
+    position: relative;
+    width: 62px;
+    height: 32px;
+    border: 1px solid #DFDFDF;
+    outline: 0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: #DFDFDF;
+    transition: background-color .1s, border .1s;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #aaaaaa;
+        transition: transform .35s cubic-bezier(0.45, 1, 0.4, 1);
+    }
+
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        transition: transform .35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    }
+
+    &:checked {
+        border-color: #04BE02;
+        background-color: #04BE02;
+
+        &:before {
+            transform: scale(0);
+        }
+
+        &:after {
+            transform: translateX(30px);
+        }
+    }
+}
+
+.ui-input {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-size: inherit;
+    line-height: $global-line-height;
+    outline: 0;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+.ui-grid-halve {
+    padding-left: 15px;
+    padding-right: 10px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.ui-grid, .ui-grid-trisect, .ui-grid-halve {
+    > li {
+        padding-right: 5px;
+        padding-bottom: 10px;
+        float: left;
+        position: relative;
+    }
+}
+
+.ui-grid-halve {
+    > li {
+        width: 50%;
+    }
+}
+
+.ui-grid-trisect {
+    > li {
+        width: 33.3333%;
+    }
+}
+
+.ui-flex {
+    display: flex;
+}
+
+.ui-flex-item {
+    flex: 1;
+}
+
+@media (max-width: 320px) {
+    .ui-cell {
+        padding: 10px;
+    }
+
+    .ui-grid, .ui-grid-trisect, .ui-grid-halve {
+        padding-left: 10px;
+        padding-right: 5px
+    }
+
+    .ui-switch {
+        height: 22px;
+        width: 42px;
+
+        &:before {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:after {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:checked {
+            &:after {
+                transform: translateX(20px);
+            }
+        }
+    }
+}

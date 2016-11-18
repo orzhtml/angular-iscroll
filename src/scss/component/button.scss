@@ -1,0 +1,75 @@
+@import "../base/mixin/border";
+@import "../base/variable";
+
+/**
+ * 按钮
+ */
+.ui-btn, .ui-btn-lg, .ui-btn-s {
+    @include set-tap-color;
+
+    background-color: $btn-background-color;
+    border-radius: $btn-border-radius;
+    color: $btn-color;
+    display: inline-block;
+    font-size: $btn-size;
+    height: $btn-height;
+    line-height: $btn-height;
+    overflow: hidden;
+    padding: $btn-padding;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &.active, &:active {
+        border-color: $btn-active-color;
+        color: $btn-active-color;
+    }
+
+    &:after {
+        @include border($btn-border-radius, $color-primary);
+    }
+
+    &.btn-block {
+        display: block;
+    }
+
+}
+
+.ui-btn-lg {
+    font-size: $btn-lg-size;
+    height: $btn-lg-height;
+    line-height: $btn-lg-height;
+}
+
+.ui-btn-s {
+    font-size: $btn-s-size;
+    height: $btn-s-height;
+    line-height: $btn-s-height;
+}
+
+.ui-btn-primary {
+    background-color: $btn-primary-background-color;
+    color: $btn-primary-color;
+
+    &:after {
+        display: none;
+    }
+
+    &:not(.disabled):not(:disabled):active,
+    &.active {
+        background-color: $btn-active-color;
+        color: $btn-primary-color;
+    }
+
+    &.disabled,
+    &:disabled {
+        background-color: $btn-disabled-color;
+        color: $btn-primary-color;
+
+        &.active, &:active {
+            background-color: $btn-disabled-color;
+            color: $btn-primary-color;
+        }
+    }
+}

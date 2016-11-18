@@ -1,0 +1,24 @@
+@import '../base/mixin/nowrap';
+
+/* 文字截断 */
+.ui-nowrap {
+    @include nowrap;
+}
+
+.ui-nowrap-flex {
+    display: -webkit-box;
+    height: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+}
+
+.ui-nowrap-multi {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

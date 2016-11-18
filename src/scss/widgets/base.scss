@@ -1,0 +1,26 @@
+/**
+ * Created by carson on 2016/11/4.
+ */
+html,
+body,
+.viewport,
+main,
+section.container {
+	height: 100%;
+	overflow: hidden;
+}
+.viewport {
+	min-width: 320px;
+	margin: 0 auto;
+	width: 100%;
+}
+main {
+	padding-top: 64px;
+	margin-top: -64px;
+}
+@media (max-width: 320px) {
+	main {
+		padding-top: 48px;
+		margin-top: -48px;
+	}
+}

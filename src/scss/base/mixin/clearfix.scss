@@ -1,0 +1,11 @@
+/**
+ * Created by carson on 2016/11/3.
+ */
+
+@mixin clearfix {
+	&:before, &:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+}

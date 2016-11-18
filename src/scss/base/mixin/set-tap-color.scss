@@ -1,0 +1,7 @@
+/**
+ * Created by carson on 2016/11/3.
+ */
+
+@mixin set-tap-color($c:rgba(0,0,0,0)) {
+    -webkit-tap-highlight-color: $c;
+}

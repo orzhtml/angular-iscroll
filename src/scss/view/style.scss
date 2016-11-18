@@ -1,0 +1,40 @@
+/**
+ * Created by carson on 2016/11/4.
+ */
+
+.body-viewport {
+    background-color: #ff5150;
+
+    .global-header {
+        background-color: #ff5150;
+    }
+}
+
+.fixed-ft-btn {
+    bottom: 40px;
+    left: 15px;
+    position: fixed;
+    right: 15px;
+
+    .ui-btn-lg {
+        background-color: rgba(255, 81, 80, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 14px;
+
+        &:active {
+            color: rgba(255, 255, 255, .7);
+
+            &:after {
+                border-color: rgba(255, 81, 80, .7);
+            }
+        }
+
+        &:after {
+            border-color: rgba(255, 81, 80, 1);
+        }
+    }
+}
+
+@import "../widgets/base";
+@import "../widgets/header";
+@import "./history";

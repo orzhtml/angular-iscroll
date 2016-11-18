@@ -1,0 +1,8 @@
+/**
+ * Created by carson on 2016/11/3.
+ */
+
+@mixin icon-font($var) {
+    font-family: $icon-font-name;
+    src: url('http://at.alicdn.com/t/@{var}.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}

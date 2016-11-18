@@ -1,0 +1,25 @@
+/**
+ * Created by carson on 2016/11/3.
+ */
+
+@import "fn";
+@import "rem";
+@import "reset";
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body, input, button, textarea, select, h1, h2, h3, h4, h5, h6 {
+    font-family: $font-base;
+}
+
+body {
+    background-color: $page-default-background-color;
+    color: $global-font-color;
+    font-size: $font-size-base;
+    font-family: $font-base;
+    line-height: $global-line-height;
+}
+

@@ -1,0 +1,31 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" lang="zh-CN" id="ng-app">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="keyword" content="orzhtml">
+		<meta name="description" content="orzhtml">
+
+		<title>orzhtml.com UI</title>
+
+		<link rel="stylesheet" href="./dist/css/mobile-ui.css">
+
+		<script src="./dist/js/angular.js"></script>
+		<script src="./dist/js/angular-ui-router.js"></script>
+
+		<script src="./dist/js/jquery-2.1.4.min.js"></script>
+		<script src="./dist/js/iscroll.js"></script>
+		<script src="./app.js"></script>
+	</head>
+
+	<body ontouchstart scroll="no" class="body-viewport" data-ng-app="myApp">
+		<div class="viewport" data-ui-view=""></div>
+	</body>
+
+</html>

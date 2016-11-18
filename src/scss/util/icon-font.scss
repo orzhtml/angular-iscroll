@@ -1,0 +1,52 @@
+@import "../base/mixin/icon";
+@import "../base/variable";
+
+@font-face {
+    font-family: $icon-font-name;
+    src: url('http://at.alicdn.com/t/#{$icon-font-svg-id}.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+.icon {
+    @include icon;
+}
+
+.icon-ren {
+    @include icon-code($icon-ren);
+}
+
+.icon-email {
+    @include icon-code($icon-email);
+}
+
+.icon-arrows-left {
+    @include icon-code($icon-arrows-left);
+}
+
+.icon-back {
+    @include icon-code($icon-arrows-left);
+}
+
+.icon-exit {
+    @include icon-code($icon-exit);
+}
+
+.icon-pos {
+    @include icon-code($icon-pos);
+}
+
+
+.icon-pos-management {
+    @include icon-code($icon-pos-management);
+}
+
+.icon-payment-history {
+    @include icon-code($icon-payment-history);
+}
+
+.icon-pwd {
+    @include icon-code($icon-pwd);
+}
+
+.icon-eye {
+    @include icon-code($icon-eye);
+}

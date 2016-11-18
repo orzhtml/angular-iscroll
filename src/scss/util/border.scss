@@ -1,0 +1,61 @@
+/**
+ * Created by carson on 2016/11/3.
+ */
+@import "../base/mixin/border";
+@import "../base/variable";
+
+/* 1px hack */
+
+.ui-border {
+    border: 1px solid $border-color;
+
+    &:after {
+        @include border($border-color);
+    }
+}
+
+.ui-border-l {
+    &:before {
+        @include border-l($border-color);
+    }
+}
+
+.ui-border-r {
+    &:after {
+        @include border-r($border-color);
+    }
+}
+
+.ui-border-t {
+    &:before {
+        @include border-t($border-color);
+    }
+
+    &:first-child {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.ui-border-b {
+    &:after {
+        @include border-b($border-color);
+    }
+
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.ui-border-tb {
+    &:before {
+        @include border-t($border-color);
+    }
+
+    &:after {
+        @include border-b($border-color);
+    }
+}

@@ -1,0 +1,121 @@
+@import "../base/mixin/border";
+@import "../base/variable";
+@import "../base/mixin/nowrap";
+
+.global-header {
+    background-color: #fff;
+    height: 64px;
+    line-height: 20px;
+    padding: 32px 12px 12px;
+    position: relative;
+
+    &.android {
+        padding-top: 12px;
+    }
+
+    .back {
+        display: block;
+        font-size: 15px;
+        height: 44px;
+        line-height: 20px;
+        left: 12px;
+        margin-top: -12px;
+        position: absolute;
+        padding: 12px 0;
+        text-align: center;
+        width: 36px;
+
+        .icon-back {
+            color: #fff;
+            margin-left: -10px;
+            margin-top: -3px;
+            width: 36px;
+
+            &:before {
+                font-size: 38px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .exit {
+        display: block;
+        font-size: 15px;
+        height: 44px;
+        line-height: 20px;
+        right: 12px;
+        margin-top: -12px;
+        position: absolute;
+        text-align: center;
+        padding: 12px 0;
+        width: 36px;
+
+        .icon-exit {
+            color: #fff;
+            margin-top: -3px;
+            width: 36px;
+
+            &:before {
+                font-size: 34px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    h1 {
+        @include nowrap;
+
+        color: #ffffff;
+        font-size: 17px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 70px;
+        text-transform: uppercase;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .global-header {
+        height: 48px;
+        padding: 23px 10px 5px;
+
+        &.android {
+            padding-top: 10px;
+        }
+
+        .back, .exit {
+            height: 28px;
+            margin-top: -4px;
+            padding: 4px 0;
+        }
+
+        .back {
+            left: 10px;
+
+            .icon-back {
+                &:before {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .exit {
+            right: 10px;
+
+            .icon-exit {
+                margin-top: -4px;
+
+                &:before {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 15px;
+            margin: 0 60px;
+        }
+    }
+}
