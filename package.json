@@ -1,5 +1,5 @@
 {
-  "name": "merchant",
+  "name": "angular-iscroll",
   "version": "1.6.0",
   "author": {
     "name": "Carson Chen"
@@ -19,5 +19,5 @@
     "postcss-merge-longhand": "^2.0.1",
     "time-grunt": "^1.4.0"
   },
-  "family": "myanmar"
+  "family": "orzhtml"
 }
